@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { environment } from 'src/environments/environment';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 
@@ -9,7 +10,7 @@ import { scoresModel } from "../models/scores";
 })
 
 export class ScoresService {
-  URI_API = "http://localhost:4000/"
+  URI_API = environment.apiBaseUrl
 
   constructor(private http: HttpClient) {}
 
