@@ -1,5 +1,4 @@
 import { Injectable } from "@angular/core";
-import { environment } from 'src/environments/environment';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 
@@ -10,7 +9,7 @@ import { scoresModel } from "../models/scores";
 })
 
 export class ScoresService {
-  URI_API = environment.apiBaseUrl
+  URI_API = "https://scutellaria-api.glitch.me/"
 
   constructor(private http: HttpClient) {}
 
